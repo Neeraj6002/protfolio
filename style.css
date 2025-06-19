@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+.body{
+    overflow-x: hidden;
+}
 
 /*navbar*/
 
@@ -105,31 +108,42 @@
 }
 /*about*/
 
-.abt{
-    height: 90%;
+.abt {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 150px;
+    overflow-x: hidden;
+    overflow-wrap: break-word;  
+    word-wrap: break-word;
+    height: 100vh;
 }
-.abt-content{
+
+.abt-content {
+    max-width: 700px;
+    margin: 0 auto;
     text-align: center;
-    padding-top: 120px;
+    padding: 0 10px;
 }
-.abt-content h1{
-    padding-bottom: 50px;
-    font-size: 35px;
+
+.abt-content h1 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 20px;
 }
-.abt-content p{
-    margin: 23px;
-    font-size: 16px;
+
+
+.abt-content p {
+    font-size: 18px;
+    color: grey;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    word-break: break-word;
 }
 
 /*sevices*/
-.heading{
-    padding-top: 100px;
-    padding-left: 42%;
-    padding-bottom: 100px;
+.heading {
+    padding: 100px 20px; 
+    text-align: center;
     color: black;
     font-size: 30px;
 }
@@ -453,19 +467,195 @@
     
     flex-wrap: wrap;
 }
-
- @media (max-width: 720px) {
+/*1500*/
+ @media (max-width: 1200px) {
     .abt-content{
-    text-align: left;
-    width: 300px;
-    
+    text-align: justify;
+    width: 800px;
+    }
+    .heading{
+        margin-left: 150px;
+
     }
     .abt-content h1{
-        padding-left: 40px;
+        text-align: center;
     }
     .heading{
     padding-left: 25%;
     }
+    
+.content h1{
+    padding-top: 100px;
+    
+}
+.home{
+    height: 80vh;
+}
+.show-more{
+    padding-left: 100px;
+}
+.im1{
+    left: -5%;
+}
+.im2{
+    
+    left: 5%;
+}
+
+.im3{
+    left: 25%;
+    
+}
+.im4{
+    left: 45%;
+    
+}
+.im5{
+    left: 70%;
+    
+}
+
+.im6{
+    left: 80%; 
+}
+.im7{
+    left: 90%;
+
+}
+.prev{
+    z-index: 4;
+}
+.portfolio{
+    height: 60vh;
+}
+.contact{
+    height: 50vh;
+    background-size: 550px;
+    background-position: -53px 10px;
+}
+.footer{
+    height: 15vh;
+    padding-top: 30px;
+}
+
+.navbar-div ul li{
+    display: block;
+    
+}
+.navbar-div{
+   position: absolute;
+   right: 0;
+   height: 100vh;
+   background-color: grey;
+    padding-left: 60px;
+    width: 300px;
+    padding: 0;
+    right: -340px;
+    background-color: #E4E312;
+}
+.navbar-li{
+    padding-bottom: 700px;
+    padding-top: 230px;
+    
+    
+}
+.navbar-li li{
+    margin: 30px;
+    font-size: 25px;
+    padding-left: 60px;
+    
+}
+.navbar.scrolled {
+  background: transparent;
+}
+.fa-xmark{
+    display: block;
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.content h1{
+    font-size: 80px;
+}
+.p1{
+    font-size: 40px;
+}
+.content{
+    padding-top: 30px;
+}
+.fa-bars{
+    display: block;
+    padding-right: 50px;
+    padding-top: 50px;
+    z-index: 6;
+    color: #E4E312;
+}
+.navbar.scrolled .fa-bars{
+    color: black;
+ }
+.art{
+display: block;
+}
+.art.scrolled{
+    display: none;
+}
+.bars{
+    padding-left: 190px;
+}
+
+.navbar.scrolled {
+    
+  color: black;
+}
+.navbar li a{
+    color: #000;
+}
+.hone2-cont{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+.pim{
+    width: 200px;
+    padding-top: 50px;
+}
+.navbar2.scroll{
+    display: none;
+}
+
+}
+
+@media (max-width: 768px) {
+    /*abt*/
+    .abt-content h1 {
+        font-size: 28px;
+        padding-right: 300px;
+    }
+    .abt{
+        height: 80vh;
+        
+    }
+    .abt-content p {
+        font-size: 16px;
+        max-width: 350px;
+    }
+    
+    .heading{
+    
+    text-align: center;
+    width: 100%; 
+    margin: 0;
+    }
+    .heading h1{
+        padding-right: 50px;
+    }
+
     .im1{
     left: -20%;
     
@@ -598,5 +788,11 @@ display: block;
 .navbar2.scroll{
     display: none;
 }
-
+.home{
+    height: 100vh;
 }
+.show-more{
+    padding-left: 0;
+}
+    }
+
